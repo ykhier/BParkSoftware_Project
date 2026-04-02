@@ -1,0 +1,103 @@
+.root {
+    -fx-background-color: linear-gradient(to bottom, #d1ecff, #e9f6ff);
+    -fx-font-family: "Segoe UI", sans-serif;
+}
+
+/* Top bar styling */
+.back-bar {
+    -fx-background-color: #1e3a74;
+    -fx-padding: 12.0;
+}
+
+/* Back button */
+.back-button {
+    -fx-background-color: #1e88e5;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 6.0;
+    -fx-padding: 6.0 14.0;
+    -fx-cursor: hand;
+}
+.back-button:hover {
+     -fx-background-color: #083b73;  /* צבע כחול כהה */
+    -fx-text-fill: white;
+}
+
+/* Title in the top bar */
+.main-title {
+    -fx-text-fill: white !important;
+    -fx-font-size: 30.0px !important;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0.0,0.0,0.0,0.25), 4.0, 0.4, 1.0, 1.0);
+}
+
+/* Label for inputs */
+.label {
+    -fx-font-size: 14.0px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+}
+
+/* Input fields */
+.text-field, .password-field {
+    -fx-font-size: 14.0px;
+    -fx-padding: 8.0px;
+    -fx-background-color: white;
+    -fx-border-color: #4CAF50;
+    -fx-border-radius: 5.0;
+    -fx-background-radius: 5.0;
+    -fx-prompt-text-fill: #aaa;
+}
+
+/* Eye button for password visibility */
+.eye-button {
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+}
+
+/* Login button styled like Back button */
+.login-button {
+    -fx-background-color: #1e88e5;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14.0px;
+    -fx-background-radius: 6.0;
+    -fx-padding: 10.0 24.0;
+    -fx-cursor: hand;
+}
+.login-button:hover {
+    -fx-background-color: #083b73;
+}
+
+/* Error message (red with transparency) */
+.error-box {
+    -fx-background-color: rgba(255.0, 0.0, 0.0, 0.2); /* red transparent */
+    -fx-border-color: red !important;
+    -fx-border-radius: 8.0px;
+    -fx-background-radius: 8.0px;
+    -fx-padding: 10.0;
+    -fx-text-fill: darkred;
+    -fx-font-weight: bold;
+}
+
+
+/* Success message (green with transparency) */
+.success-box {
+    -fx-background-color: rgba(0.0, 128.0, 0.0, 0.2); /* green transparent */
+    -fx-border-color: green !important;
+    -fx-border-radius: 8.0px;
+    -fx-background-radius: 8.0px;
+    -fx-padding: 10.0;
+    -fx-text-fill: darkgreen;
+    -fx-font-weight: bold;
+}
+/*style for the link */
+.qr-login-link {
+    -fx-text-fill: #0066cc;
+    -fx-underline: true;
+    -fx-cursor: hand;
+    -fx-font-size: 13.0px;
+}
+.qr-login-link:hover {
+    -fx-text-fill: #004c99;
+}

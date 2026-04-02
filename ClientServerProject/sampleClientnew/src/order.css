@@ -1,0 +1,88 @@
+
+.main-pane {
+    -fx-background-color: #e0f0ff; 
+    -fx-font-family: "Segoe UI", sans-serif;
+}
+
+
+.top-bar {
+    -fx-background-color: #1e3a74;
+    -fx-padding: 12.0px;
+}
+
+
+.top-bar-title {
+    -fx-font-size: 26.0px;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+
+.back-button {
+    -fx-background-color: #1e88e5;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 6.0;
+    -fx-padding: 6.0 14.0;
+    -fx-cursor: hand;
+}
+.back-button:hover {
+    -fx-background-color: #1565c0;
+}
+
+/* כפתורים ראשיים */
+.primary-button {
+    -fx-background-color: #1e88e5;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14.0px;
+    -fx-background-radius: 8.0;
+    -fx-padding: 10.0 20.0;
+    -fx-cursor: hand;
+}
+.primary-button:hover {
+    -fx-background-color: #1565c0;
+}
+
+/* תיבות טופס: DatePicker + ComboBox */
+.form-control {
+    -fx-font-size: 14.0px;
+    -fx-pref-width: 250.0px;
+    -fx-padding: 8.0px;
+    -fx-border-color: #2196f3;
+    -fx-border-radius: 5.0;
+    -fx-background-radius: 5.0;
+    -fx-background-color: white;
+}
+
+/* תווית טופס */
+.form-grid .label {
+    -fx-font-weight: bold;
+    -fx-font-size: 15.0px;
+}
+
+/* תוויות מצב */
+#statusLabel {
+    -fx-font-size: 14.0px;
+    -fx-font-weight: bold;
+}
+
+/* Label showing date and time range */
+.time-range-label {
+    -fx-font-size: 20.0px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1e3a74;
+    -fx-padding: 10.0 0.0 15.0 0.0;
+    -fx-alignment: center;
+}
+#timeRangeLabel {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1e3a74;
+    -fx-padding: 10 0 15 0;
+    -fx-alignment: center;
+    -fx-border-color: #90caf9;
+    -fx-border-width: 0 0 1 0;
+    -fx-border-style: solid;
+}
+

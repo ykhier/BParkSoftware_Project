@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="390.0" prefWidth="500.0" stylesheets="@ippage.css"
+            xmlns="http://javafx.com/javafx/23.0.1"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="IpPageController">
+
+    
+    <top>
+        <HBox alignment="TOP_CENTER" spacing="20" styleClass="top-bar">
+            <children>
+                <Label styleClass="main-title" text="CONNECT TO SERVER" />
+            </children>
+        </HBox>
+    </top>
+
+    <!-- Center content -->
+    <center>
+        <VBox alignment="TOP_CENTER" spacing="20" style="-fx-padding: 40 0 0 0;">
+            
+
+            <!-- Label + Text Field for IP -->
+            <VBox alignment="TOP_LEFT" spacing="5" maxWidth="320">
+                <children>
+                    <Label text="Enter IP Address:" styleClass="input-label"/>
+                    <TextField fx:id="ipTextField" promptText="Enter IP Address"
+                               prefWidth="300" prefHeight="40"
+                               styleClass="input-field"/>
+                </children>
+            </VBox>
+
+            <!-- Connect Button -->
+            <Button text="Connect" onAction="#onConnectClicked"
+                    styleClass="back-button" prefWidth="130"/>
+
+            <!-- Error message box -->
+            <TextArea fx:id="errorTextArea" editable="false" visible="false"
+                      wrapText="true" prefWidth="300" prefHeight="40"
+                      styleClass="error-box"/>
+        </VBox>
+    </center>
+</BorderPane>

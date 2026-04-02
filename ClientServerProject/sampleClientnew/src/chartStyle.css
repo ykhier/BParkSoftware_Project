@@ -1,0 +1,118 @@
+/* Global Background */
+.main-content {
+    -fx-background-color: linear-gradient(to bottom, #e3f2fd, #ffffff);
+    -fx-padding: 20;
+    -fx-spacing: 20;
+}
+
+/* Top Bar */
+.top-bar {
+    -fx-background-color: #1e3a74;
+    -fx-padding: 10;
+    -fx-spacing: 10;
+}
+
+/* Title Text */
+.main-title {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 4, 0.5, 1, 1);
+}
+
+/* Back Button */
+.back-button {
+    -fx-background-color: #1976d2;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 6 14;
+    -fx-background-radius: 6;
+}
+.back-button:hover {
+    -fx-background-color: #0d47a1;
+}
+
+/* Action Buttons (Use same as Back Button) */
+.action-button {
+    -fx-background-color: #1976d2;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 6 14;
+    -fx-background-radius: 6;
+}
+.action-button:hover {
+    -fx-background-color: #0d47a1;
+}
+
+/* Table Styling */
+.table-view {
+    -fx-background-color: #ffffff;
+    -fx-border-color: black;
+    -fx-border-width: 1;
+    -fx-border-style: solid;
+    -fx-padding: 10;
+    -fx-background-radius: 8;
+    -fx-font-size: 13px;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header {
+    -fx-background-color: #d0e6f7;
+    -fx-border-color: black;
+    -fx-border-width: 1;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: #003366;
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+    -fx-alignment: center;
+}
+
+.table-view .table-cell {
+    -fx-border-color: black;
+    -fx-border-width: 1;
+}
+
+.table-view .table-row-cell {
+    -fx-cell-size: 36px;
+}
+.table-view .table-row-cell:filled:selected {
+    -fx-background-color: #bbdefb;
+}
+
+/* Table Column Alignment */
+.table-column {
+    -fx-alignment: CENTER;
+}
+
+/* Chart Styling */
+.chart-title {
+    -fx-text-fill: #333;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+.chart-legend {
+    -fx-background-color: transparent;
+}
+
+.chart-bar {
+    -fx-background-radius: 4;
+    -fx-padding: 4;
+}
+
+/* Axes Styling */
+.axis-label {
+    -fx-font-size: 12px;
+    -fx-text-fill: #444;
+}
+
+.chart-plot-background {
+    -fx-background-color: #f5f5f5;
+    -fx-border-color: #cfd8dc;
+    -fx-border-width: 1;
+}

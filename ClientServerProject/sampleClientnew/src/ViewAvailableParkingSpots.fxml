@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="ViewAvailableParkingSpotsController"
+	stylesheets="@order.css" prefWidth="700" prefHeight="700">
+
+	<!-- Top blue bar -->
+	<top>
+		<HBox spacing="10" alignment="CENTER_LEFT" styleClass="top-bar">
+			<children>
+				<Button fx:id="backButton" text="← Back"
+					onAction="#handleBack" styleClass="back-button" />
+				<Region HBox.hgrow="ALWAYS" />
+				<Label text="Available Parking Spots"
+					styleClass="top-bar-title" />
+				<Region HBox.hgrow="ALWAYS" />
+			</children>
+		</HBox>
+	</top>
+
+	<!-- Main content -->
+	<center>
+		<VBox spacing="20" alignment="TOP_LEFT" styleClass="main-pane">
+			<padding>
+				<Insets top="20" left="40" right="20" bottom="20" />
+			</padding>
+
+			<GridPane hgap="15" vgap="15" styleClass="form-grid">
+				<columnConstraints>
+					<ColumnConstraints halignment="LEFT"
+						minWidth="150" />
+					<ColumnConstraints halignment="LEFT"
+						minWidth="300" />
+				</columnConstraints>
+
+				<!-- Display current time range -->
+				<Label fx:id="timeRangeLabel"
+					text="📅 Today — 🕒 HH:MM to HH:MM" GridPane.rowIndex="0"
+					GridPane.columnIndex="0" GridPane.columnSpan="2"
+					styleClass="time-range-label" alignment="CENTER"
+					maxWidth="Infinity" GridPane.halignment="CENTER" />
+				<!-- View button -->
+				<Button text="View" onAction="#handleView"
+					GridPane.rowIndex="1" GridPane.columnIndex="0"
+					GridPane.columnSpan="2" styleClass="primary-button" maxWidth="150"
+					GridPane.halignment="CENTER" />
+
+			</GridPane>
+
+			<!-- Status label -->
+			<Label fx:id="statusLabel" />
+
+			<!-- Parking grid display -->
+			<ScrollPane fitToWidth="true" fitToHeight="true" style="-fx-background-color: transparent;">
+    <HBox alignment="CENTER">
+        <GridPane fx:id="grid" hgap="30" vgap="30">
+            <padding><Insets top="20" right="20" bottom="20" left="20"/></padding>
+        </GridPane>
+    </HBox>
+</ScrollPane>
+
+		</VBox>
+	</center>
+</BorderPane>

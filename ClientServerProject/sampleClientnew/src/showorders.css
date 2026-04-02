@@ -1,0 +1,128 @@
+.root {
+    -fx-background-color: #dff1ff; 
+}
+
+
+/* ====== Top Bar ====== */
+.top-bar {
+	-fx-background-color: #1e3a74;
+	    -fx-padding: 12 20;
+}
+
+.main-title {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+
+.side-panel {
+    -fx-background-color: #f4f7fa; 
+    -fx-padding: 20;
+    -fx-border-width: 0 1 0 0;
+    -fx-border-color: #ccc;
+    -fx-spacing: 10;
+}
+
+/* Default Side Button */
+.side-menu-button {
+    -fx-background-color: #d0e6f7;
+    -fx-text-fill: #003366;
+    -fx-font-size: 14px;
+    -fx-font-family: "Segoe UI";
+    -fx-font-weight: bold;
+    -fx-background-radius: 6;
+    -fx-padding: 10 14;
+    -fx-border-color: #b0c4de;
+    -fx-border-radius: 6;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 4, 0.3, 0, 2);
+    -fx-pref-width: 160px;           
+    -fx-wrap-text: true;             
+    -fx-alignment: center;           
+    -fx-text-alignment: center;      
+}
+.side-menu-button:hover {
+    -fx-background-color: #003366;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-family: "Segoe UI";
+    -fx-font-weight: bold;
+    -fx-background-radius: 6;
+    -fx-padding: 10 14;
+    -fx-border-color: #002244;
+    -fx-border-radius: 6;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 4, 0.4, 0, 2);
+    -fx-pref-width: 160px;
+    -fx-wrap-text: true;
+    -fx-alignment: center;
+}
+
+/* Selected Button in Side Panel */
+.side-menu-button-selected {
+    -fx-background-color: #003366;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-family: "Segoe UI";
+    -fx-font-weight: bold;
+    -fx-background-radius: 6;
+    -fx-padding: 10 14;
+    -fx-border-color: #002244;
+    -fx-border-radius: 6;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 4, 0.4, 0, 2);
+    -fx-pref-width: 160px;
+    -fx-wrap-text: true;
+    -fx-alignment: center;
+}
+
+/* Back Button */
+.back-button {
+    -fx-background-color: #1976d2;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 6 14;
+    -fx-background-radius: 6;
+}
+.back-button:hover {
+    -fx-background-color: #0d47a1;
+}
+
+/* ===================== */
+/*    Table Styling      */
+/* ===================== */
+
+/* רקע של כותרת הטבלה */
+.table-view .column-header-background {
+    -fx-background-color: transparent;
+}
+
+/* כותרת */
+.table-view .column-header {
+    -fx-background-color: #d0e6f7;
+    -fx-border-color: black;
+    -fx-border-width: 1;
+    -fx-border-style: solid;
+}
+
+/* טקסט בכותרות */
+.table-view .column-header .label {
+    -fx-text-fill: #003366;
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+    -fx-alignment: center;
+}
+
+/* תאים של תוכן */
+.table-view .table-cell {
+    -fx-border-color: black;
+    -fx-border-width: 1;
+    -fx-border-style: solid;
+    -fx-alignment: center;
+}
+
+/* מסגרת כללית */
+.table-view {
+    -fx-border-color: black;
+    -fx-border-width: 1;
+    -fx-border-style: solid;
+}
+

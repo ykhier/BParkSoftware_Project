@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="600" prefWidth="1109.0"
+	stylesheets="@SubscriberMain.css"
+	xmlns="http://javafx.com/javafx/23.0.1"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="SubscriberMainController">
+
+	<top>
+		<HBox alignment="CENTER_LEFT" spacing="20" styleClass="top-bar">
+			<children>
+				<Button fx:id="LogoutButton" onAction="#handleLogout"
+					styleClass="logout-button" text="Logout" />
+				<Label styleClass="main-title" text="Subscriber Orders" />
+			</children>
+		</HBox>
+	</top>
+
+	<left>
+		<VBox alignment="TOP_CENTER" prefHeight="541.0" prefWidth="181.0"
+			spacing="20" styleClass="side-panel">
+			<children>
+				<Button onAction="#handleUpdateSubscriber"
+					styleClass="side-menu-button" text="Update details" />
+				<Button onAction="#handleSubscriberOrders"
+					styleClass="side-menu-button-selected" text="Orders" />
+				<Button onAction="#handleOrdersstatus"
+					styleClass="side-menu-button" text="Recent parking activity" />
+				<Button onAction="#carDeliveryBtnClicked"
+					styleClass="side-menu-button" text="Car Delivery" />
+				<Button onAction="#handleRegister"
+					styleClass="side-menu-button" text="Car Receiving " />
+				<Button onAction="#handleExtendsParkingTime"
+					styleClass="side-menu-button" text="Extend Parking Time" />
+				<Button onAction="#handleOrderParkingSpot"
+					styleClass="side-menu-button" text="Order parking spot" />
+				<Button styleClass="side-menu-button"
+					text="View available parking spots"
+					onAction="#handleViewParkingSpot" />
+			</children>
+			<padding>
+				<Insets top="40" />
+			</padding>
+		</VBox>
+	</left>
+
+	<center>
+		<VBox alignment="TOP_CENTER" spacing="20"
+			style="-fx-padding: 30;">
+			<TableView fx:id="historyTable" prefHeight="400"
+				prefWidth="871.0">
+				<columns>
+					<TableColumn fx:id="orderNumberCol"
+						prefWidth="87.33332824707031" text="Order Number" />
+					<TableColumn fx:id="orderDateCol"
+						prefWidth="72.66668701171875" text="Order Date" />
+					<TableColumn fx:id="datePlacedCol"
+						prefWidth="100.66668701171875" text="Date Of Placing Order" />
+					<TableColumn fx:id="parkingSpaceCol"
+						prefWidth="98.66671752929688" text="Parking Space" />
+					<TableColumn fx:id="carNumberCol"
+						prefWidth="86.6666259765625" text="Car Number" />
+				</columns>
+			</TableView>
+		</VBox>
+	</center>
+</BorderPane>

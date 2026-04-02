@@ -1,0 +1,36 @@
+.custom-alert {
+    -fx-background-color: #eaf3fb;
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 14px;
+    -fx-text-fill: #1e3a74;
+}
+
+.custom-alert .header-panel {
+    -fx-background-color: linear-gradient(to right, #1e3a74, #1976d2);
+}
+
+/* צבע טקסט של כותרת */
+.custom-alert .header-panel .label {
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+.custom-alert .label.content {
+    -fx-text-fill: #1e3a74;
+    -fx-font-size: 13.5px;
+    -fx-line-spacing: 1.2em;
+    -fx-padding: 8 0 0 0;
+}
+
+.custom-alert .dialog-pane .button-bar .button {
+    -fx-background-color: #1976d2;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 6;
+    -fx-cursor: hand;
+}
+
+.custom-alert .dialog-pane .button-bar .button:hover {
+    -fx-background-color: #0d47a1;
+}

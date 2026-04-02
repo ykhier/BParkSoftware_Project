@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.BorderPane?>
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+	xmlns="http://javafx.com/javafx/8.0.171" prefWidth="850"
+	prefHeight="600" stylesheets="@updateorder.css"
+	fx:controller="parkingActiveDetailsOnManagerController">
+	<top>
+		<HBox spacing="20" alignment="CENTER_LEFT" styleClass="top-bar">
+			<children>
+				<Button fx:id="LogoutButton" onAction="#handleLogout"
+					styleClass="logout-button" text="Logout" />
+				
+			</children>
+		</HBox>
+	</top>
+	<left>
+
+		<!-- Left side menu -->
+		<VBox layoutY="45.0" prefHeight="505.0" prefWidth="180.0"
+			style="-fx-background-color: #bbdefb;">
+			<children>
+				<VBox prefHeight="60.0" />
+				<Button text="Subscriber details"
+					onAction="#subscriberDetailsBtn" maxWidth="160.0"
+					styleClass="side-menu-button-selected" minHeight="40.0"
+					mnemonicParsing="false" wrapText="true" />
+
+				<Button text="Parking active details"
+					styleClass="side-menu-button-selected" />
+				<Button maxWidth="160.0" minHeight="40.0"
+					mnemonicParsing="false" onAction="#reportsBtn"
+					styleClass="side-menu-button" text="Parking Reports"
+					wrapText="true" />
+				<Button maxWidth="160.0" minHeight="40.0"
+					mnemonicParsing="false" onAction="#MonthlyreportsBtn"
+					styleClass="side-menu-button" text="Monthly Parking Reports"
+					wrapText="true" />
+			</children>
+			<padding>
+				<Insets top="20" left="10" right="10" bottom="10" />
+			</padding>
+		</VBox>
+	</left>
+	<!-- Main content -->
+	<VBox layoutX="180.0" layoutY="55.0" spacing="20.0"
+		prefWidth="700.0">
+		<children>
+			
+
+			<TableView fx:id="parkingTable" prefHeight="400.0">
+				<columns>
+					<TableColumn fx:id="subscriberCodeCol"
+						text="Subscriber Code" prefWidth="120.0" />
+					<TableColumn fx:id="confCodeCol"
+						text="Confirmation Code" prefWidth="140.0" />
+					<TableColumn fx:id="carNumberCol" text="Car Number"
+						prefWidth="120.0" />
+					<TableColumn fx:id="parkingSpaceCol"
+						text="Parking Space" prefWidth="120.0" />
+					<TableColumn fx:id="delTimeCol" text="Delivery Time"
+						prefWidth="120.0" />
+					<TableColumn fx:id="recTimeCol" text="Receiving Time"
+						prefWidth="120.0" />
+				</columns>
+			</TableView>
+		</children>
+		<padding>
+			<Insets top="20" left="30" right="30" bottom="20" />
+		</padding>
+	</VBox>
+</BorderPane>

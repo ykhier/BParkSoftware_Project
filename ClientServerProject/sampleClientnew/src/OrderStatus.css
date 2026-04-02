@@ -1,0 +1,116 @@
+/* ===================== */
+/*       Top Bar         */
+/* ===================== */
+.top-bar {
+    -fx-background-color: #1e3a74;
+    -fx-padding: 12.0 20.0;
+}
+.root {
+    -fx-background-color: #dff1ff; 
+}
+
+/* Title inside top bar */
+.main-title {
+    -fx-font-size: 24.0px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+/* ===================== */
+/*     Logout Button     */
+/* ===================== */
+.logout-button {
+    -fx-background-color: #d32f2f; /* אדום כהה */
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 6.0 14.0;
+    -fx-background-radius: 6.0;
+    -fx-effect: dropshadow(gaussian, rgba(0.0,0.0,0.0,0.15), 4.0, 0.3, 0.0, 2.0);
+}
+.logout-button:hover {
+    -fx-background-color: #b71c1c; /* אדום כהה יותר בהובר */
+}
+
+
+/* ===================== */
+/*     Side Panel        */
+/* ===================== */
+.side-panel {
+    -fx-background-color: #f4f7fa; 
+    -fx-padding: 20.0;
+    -fx-border-width: 0.0 1.0 0.0 0.0;
+    -fx-border-color: #ccc;
+    -fx-spacing: 10.0;
+}
+
+/* Default Side Button */
+.side-menu-button {
+    -fx-background-color: #d0e6f7;
+    -fx-text-fill: #003366;
+    -fx-font-size: 14.0px;
+    -fx-font-family: "Segoe UI";
+    -fx-font-weight: bold;
+    -fx-background-radius: 6.0;
+    -fx-padding: 10.0 14.0;
+    -fx-border-color: #b0c4de;
+    -fx-border-radius: 6.0;
+    -fx-effect: dropshadow(gaussian, rgba(0.0,0.0,0.0,0.1), 4.0, 0.3, 0.0, 2.0);
+    -fx-pref-width: 160.0px;           
+    -fx-wrap-text: true;             
+    -fx-alignment: center;           
+    -fx-text-alignment: center;      
+}
+.side-menu-button:hover {
+    -fx-background-color: #003366;
+    -fx-text-fill: white;
+    -fx-font-size: 14.0px;
+    -fx-font-family: "Segoe UI";
+    -fx-font-weight: bold;
+    -fx-background-radius: 6.0;
+    -fx-padding: 10.0 14.0;
+    -fx-border-color: #002244;
+    -fx-border-radius: 6.0;
+    -fx-effect: dropshadow(gaussian, rgba(0.0,0.0,0.0,0.2), 4.0, 0.4, 0.0, 2.0);
+    -fx-pref-width: 160.0px;
+    -fx-wrap-text: true;
+    -fx-alignment: center;
+}
+
+/* Selected Button in Side Panel */
+.side-menu-button-selected {
+    -fx-background-color: #003366;
+    -fx-text-fill: white;
+    -fx-font-size: 14.0px;
+    -fx-font-family: "Segoe UI";
+    -fx-font-weight: bold;
+    -fx-background-radius: 6.0;
+    -fx-padding: 10.0 14.0;
+    -fx-border-color: #002244;
+    -fx-border-radius: 6.0;
+    -fx-effect: dropshadow(gaussian, rgba(0.0,0.0,0.0,0.2), 4.0, 0.4, 0.0, 2.0);
+    -fx-pref-width: 160.0px;
+    -fx-wrap-text: true;
+    -fx-alignment: center;
+}
+
+/* ===================== */
+/*    Table Styling      */
+/* ===================== */
+
+/* רקע של כותרת הטבלה */
+.table-view .column-header-background {
+    -fx-background-color: #d0e6f7;
+}
+
+/* טקסט של כותרות */
+.table-view .column-header .label {
+    -fx-font-weight: bold;
+    -fx-text-fill: #003366;
+    -fx-font-size: 13.0px;
+    -fx-alignment: center;
+}
+
+/* יישור תוכן בעמודות */
+.table-view .table-column {
+    -fx-alignment: center;
+}

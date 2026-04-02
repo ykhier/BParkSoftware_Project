@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="QRCodeLoginController" prefWidth="400.0" prefHeight="320.0" stylesheets="@subscriber_login.css">
+
+    <!-- Top blue bar with back button and centered title -->
+    <HBox spacing="10" alignment="CENTER_LEFT" prefHeight="60" prefWidth="400"
+          styleClass="back-bar" AnchorPane.topAnchor="0.0" AnchorPane.leftAnchor="0.0"
+          AnchorPane.rightAnchor="0.0">
+        
+        <!-- Back button -->
+        <Button text="← Back" onAction="#handleBack" styleClass="back-button" />
+        
+        <!-- Spacer to center the title -->
+        <Region HBox.hgrow="ALWAYS" />
+        
+        <!-- Title centered -->
+        <Label text="QR Code " styleClass="main-title" />
+        
+        <!-- Spacer for right alignment -->
+        <Region HBox.hgrow="ALWAYS" />
+    </HBox>
+
+    <!-- Main content -->
+    <VBox spacing="15" alignment="CENTER"
+          AnchorPane.topAnchor="80.0" AnchorPane.leftAnchor="30.0"
+          AnchorPane.rightAnchor="30.0" AnchorPane.bottomAnchor="20.0">
+
+        <!-- Input label and field -->
+        <Label text="Scan QR Code (Enter Code)" styleClass="label" />
+        <TextField fx:id="codeField" promptText="Enter your code..."
+                   maxWidth="250" styleClass="text-field" />
+
+        <!-- Login button -->
+        <Button text="Login" onAction="#handleLogin" maxWidth="150"
+                styleClass="login-button" />
+
+        <!-- Status label -->
+        <Label fx:id="statusLabel"
+       alignment="CENTER"
+       text=""
+       maxWidth="280"
+       wrapText="true"
+       visible="false"
+       styleClass="error-box"/>
+
+
+    </VBox>
+</AnchorPane>
